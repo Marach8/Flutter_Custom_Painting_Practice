@@ -1,3 +1,4 @@
+import 'package:custom_painting_course/src/draw_line.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,6 +10,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        useMaterial3: true,
+      ),
+      home: const DrawLineExample(),
+    );
   }
 }
