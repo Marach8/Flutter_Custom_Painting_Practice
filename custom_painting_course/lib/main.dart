@@ -1,3 +1,4 @@
+import 'package:custom_painting_course/src/draw_circle.dart';
 import 'package:custom_painting_course/src/draw_line.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
         useMaterial3: true,
       ),
-      home: const DrawLineExample(),
+      home: const DrawCircleExample(),
     );
   }
 }
