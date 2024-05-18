@@ -1,9 +1,6 @@
-import 'package:custom_painting_course/src/draw_circle.dart';
-import 'package:custom_painting_course/src/draw_diff_two_rectangles.dart';
-import 'package:custom_painting_course/src/draw_line.dart';
-import 'package:custom_painting_course/src/draw_oval.dart';
+import 'package:custom_painting_course/src/draw_arc.dart';
+import 'package:custom_painting_course/src/draw_parabola.dart';
 import 'package:custom_painting_course/src/draw_polygon.dart';
-import 'package:custom_painting_course/src/draw_rectangle.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -21,7 +18,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
         useMaterial3: true,
       ),
-      home: const DrawPolygon(),
+      home: const DrawParabola(),
     );
   }
 }
