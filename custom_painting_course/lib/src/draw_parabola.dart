@@ -34,9 +34,20 @@ class Painter extends CustomPainter {
     final rect = Rect.fromCircle(center: center, radius: radius);
     Path path = Path()
       ..moveTo(0, size.height / 2)
-      ..conicTo(size.width / 2, size.height, size.width, size.height / 2, 10);
+      ..conicTo(size.width / 2, -size.height, size.width, size.height / 2, 0.5);
 
     canvas.drawPath(path, paint1);
+
+    Path path1 = Path()
+      ..moveTo(0, size.height / 2)
+      ..quadraticBezierTo(
+        size.width / 2,
+        size.height,
+        size.width,
+        size.height / 2,
+      );
+
+    canvas.drawPath(path1, paint1);
   }
 
   @override
