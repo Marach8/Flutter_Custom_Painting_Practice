@@ -1,6 +1,8 @@
 import 'package:custom_painting_course/src/draw_arc.dart';
+import 'package:custom_painting_course/src/draw_line_block.dart';
 import 'package:custom_painting_course/src/draw_parabola.dart';
 import 'package:custom_painting_course/src/draw_polygon.dart';
+import 'package:custom_painting_course/src/shift_and_reset.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
         useMaterial3: true,
       ),
-      home: const DrawParabola(),
+      home: const ShiftAndResetExample(),
     );
   }
 }
