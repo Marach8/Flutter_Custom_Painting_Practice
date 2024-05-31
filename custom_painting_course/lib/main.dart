@@ -1,3 +1,4 @@
+import 'package:custom_painting_course/src/combine_path.dart';
 import 'package:custom_painting_course/src/draw_arc.dart';
 import 'package:custom_painting_course/src/draw_line_block.dart';
 import 'package:custom_painting_course/src/draw_parabola.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
         useMaterial3: true,
       ),
-      home: const ShiftAndResetExample(),
+      home: const CombinePathExample(),
     );
   }
 }

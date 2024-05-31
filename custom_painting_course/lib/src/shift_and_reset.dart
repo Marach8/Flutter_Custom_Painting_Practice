@@ -13,6 +13,7 @@ class ShiftAndResetExample extends StatelessWidget {
   }
 }
 
+
 class Painter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
